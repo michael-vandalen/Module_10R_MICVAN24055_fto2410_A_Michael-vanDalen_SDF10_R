@@ -2,39 +2,51 @@
 <html class="p-0 m-0">
   <head>
     <title>Add to Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body class="p-0 m-0">
-    <div class="container h-screen flex justify-center items-center flex-col">
+  <body class="p-0 m-0 select-none font-mono">
+    <div class="container flex flex-wrap justify-center items-center">
       <div
-        class="grid gap-3 border-[5px] border-black px-[80px] py-11 rounded-lg"
+        class="flex flex-col border-[5px] border-black p-3 m-[20px] rounded-lg max-w-8xl text-center items-center justify-center lg:p-10 lg:max-w-lg"
       >
         <img
-          src="../img/black_cat.png"
+          src="../assets/cat.png"
           alt="A black cat waving"
-          class="h-[300px] w-[300]"
+          class="w-[150px] lg:w-[250px]"
         />
         <input
-          class="text-[#432000] bg-[#DCE1EB] text-[25px] p-4 rounded text-center border-11"
+          class="text-[#432000] bg-[#DCE1EB] text-[15px] p-4 rounded text-center border-11 w-full md:text-[20px] lg:text-[25px]"
           type="text"
           id="input-field"
           placeholder="Bread"
         />
         <button
-          class="text-[#FDFDFD] bg-[#AC485A] text-[25px] p-4 rounded font-sans"
+          class="text-[#FDFDFD] bg-[#c08020] text-[15px] py-4 rounded hover:bg-[#fcff4e] mt-3 w-full md:text-[20px] lg:text-[25px]"
           id="add-button"
         >
           Add to cart
         </button>
-      </div>
-      <div class="grid m-3 text-left text-[25px]">
-        <ul class="list-disc" id="shopping-list"></ul>
+        <ul
+          class="list-none p-0 flex flex-wrap gap-3 text-[20px] items-center justify-center lg:text-[28px]"
+          id="shopping-list"
+        ></ul>
       </div>
     </div>
     <script src="../index.js" type="module"></script>

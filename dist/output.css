@@ -592,52 +592,46 @@ video {
   margin: 0px;
 }
 
-.m-3 {
-  margin: 0.75rem;
+.m-\[20px\] {
+  margin: 20px;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .flex {
   display: flex;
 }
 
-.grid {
-  display: grid;
+.w-\[150px\] {
+  width: 150px;
 }
 
-.h-\[300px\] {
-  height: 300px;
+.w-full {
+  width: 100%;
 }
 
-.h-screen {
-  height: 100vh;
+.max-w-8xl {
+  max-width: 380px;
 }
 
-.w-\[300\] {
-  width: 300;
+.select-none {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
-.w-\[485px\] {
-  width: 485px;
-}
-
-.w-\[60px\] {
-  width: 60px;
-}
-
-.list-decimal {
-  list-style-type: decimal;
-}
-
-.list-disc {
-  list-style-type: disc;
+.list-none {
+  list-style-type: none;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -669,48 +663,47 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
-.bg-\[\#AC485A\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(172 72 90 / var(--tw-bg-opacity, 1));
-}
-
 .bg-\[\#DCE1EB\] {
   --tw-bg-opacity: 1;
   background-color: rgb(220 225 235 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#c08020\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 128 32 / var(--tw-bg-opacity, 1));
 }
 
 .p-0 {
   padding: 0px;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
 
-.px-\[80px\] {
-  padding-left: 80px;
-  padding-right: 80px;
-}
-
-.py-11 {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
-}
-
-.text-left {
-  text-align: left;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .text-center {
   text-align: center;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.text-\[25px\] {
-  font-size: 25px;
+.text-\[15px\] {
+  font-size: 15px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .text-\[\#432000\] {
@@ -721,4 +714,37 @@ video {
 .text-\[\#FDFDFD\] {
   --tw-text-opacity: 1;
   color: rgb(253 253 253 / var(--tw-text-opacity, 1));
+}
+
+.hover\:bg-\[\#fcff4e\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 255 78 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .md\:text-\[20px\] {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .lg\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .lg\:p-10 {
+    padding: 2.5rem;
+  }
+
+  .lg\:text-\[25px\] {
+    font-size: 25px;
+  }
+
+  .lg\:text-\[28px\] {
+    font-size: 28px;
+  }
 }
